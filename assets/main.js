@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      alert("Thank you! Online booking integration can be connected here.");
+      alert("Thank you! This is just a demo website.");
 
       bookingForm.reset();
     });

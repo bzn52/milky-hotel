@@ -30,9 +30,144 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+
+    <style>
+      .loading-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(201, 168, 76, 0.15),
+            transparent 40%
+          ),
+          linear-gradient(135deg, var(--primary), var(--secondary));
+
+        transition:
+          opacity 0.8s ease,
+          visibility 0.8s ease;
+      }
+
+      .loading-screen.hide {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .loader-card {
+        text-align: center;
+        width: min(90%, 500px);
+        padding: 3rem;
+
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+
+        border: 1px solid rgba(201, 168, 76, 0.25);
+        border-radius: var(--radius);
+
+        box-shadow: var(--shadow);
+      }
+
+      .hotel-mark {
+        font-size: 4rem;
+        color: var(--accent);
+        margin-bottom: 1rem;
+
+        animation: pulse 2s infinite;
+      }
+
+      .loader-card h1 {
+        color: #fff;
+        margin-bottom: 0.75rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .demo-text {
+        color: #fff;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .contact-text {
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 2rem;
+      }
+
+      .key-loader {
+        height: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 999px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+      }
+
+      .key-fill {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(
+          90deg,
+          var(--accent),
+          #f7d878,
+          var(--accent)
+        );
+
+        animation: fillBar 3s linear forwards;
+      }
+
+      .loading-text {
+        color: var(--accent);
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+      }
+
+      @keyframes fillBar {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 0.7;
+        }
+      }
+    </style>
   </head>
 
   <body>
+    <!-- Loader -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader-card">
+        <div class="hotel-mark">✦</div>
+
+        <h1>Welcome, Guest</h1>
+
+        <p class="demo-text">This is just a demo website</p>
+        <p class="contact-text">Contact: meowxzen@gmail.com</p>
+
+        <div class="key-loader">
+          <div class="key-fill"></div>
+        </div>
+
+        <span class="loading-text">Preparing your stay...</span>
+      </div>
+    </div>
+
     <!-- ================= NAVBAR ================= -->
 
     <header>
@@ -161,7 +296,7 @@
 
               <p>Comfortable bedding, mountain view, WiFi and hot shower.</p>
 
-              <div class="price">$35 / night</div>
+              <div class="price">Rs 3500 / night</div>
 
               <a href="rooms.html"> View Details → </a>
             </div>
@@ -178,7 +313,7 @@
 
               <p>King bed, city view, mini fridge and Smart TV.</p>
 
-              <div class="price">$55 / night</div>
+              <div class="price">Rs 5500 / night</div>
 
               <a href="rooms.html"> View Details → </a>
             </div>
@@ -195,7 +330,7 @@
 
               <p>Premium furnishings and panoramic Himalayan views.</p>
 
-              <div class="price">$95 / night</div>
+              <div class="price">Rs 7500 / night</div>
 
               <a href="rooms.html"> View Details → </a>
             </div>
@@ -360,6 +495,11 @@
     <button id="backToTop">
       <i class="fas fa-arrow-up"></i>
     </button>
+    <script>
+      setTimeout(() => {
+        document.getElementById("loadingScreen").classList.add("hide");
+      }, 3000);
+    </script>
 
     <script src="assets/main.js"></script>
   </body>
