@@ -1,7 +1,4 @@
-/* ==================================
-   HOTEL MILKY - GALLERY LIGHTBOX
-================================== */
-
+// Lightbox
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll(".gallery-item");
 
@@ -13,10 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentIndex = 0;
 
-  /* ==========================
-       CREATE NAVIGATION BUTTONS
-    ========================== */
-
+  // Nav buttons
   const prevBtn = document.createElement("button");
   const nextBtn = document.createElement("button");
 
@@ -29,10 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   lightbox.appendChild(prevBtn);
   lightbox.appendChild(nextBtn);
 
-  /* ==========================
-       OPEN IMAGE
-    ========================== */
-
+  // Open image
   function openImage(index) {
     currentIndex = index;
 
@@ -45,20 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxImg.alt = images[currentIndex].alt;
   }
 
-  /* ==========================
-       CLOSE LIGHTBOX
-    ========================== */
-
+  // Close lightbox
   function closeLightbox() {
     lightbox.style.display = "none";
 
     document.body.style.overflow = "auto";
   }
 
-  /* ==========================
-       NEXT IMAGE
-    ========================== */
-
+  // Next image
   function nextImage() {
     currentIndex++;
 
@@ -71,10 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxImg.alt = images[currentIndex].alt;
   }
 
-  /* ==========================
-       PREVIOUS IMAGE
-    ========================== */
-
+  // Prev image
   function previousImage() {
     currentIndex--;
 
@@ -87,40 +69,28 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxImg.alt = images[currentIndex].alt;
   }
 
-  /* ==========================
-       CLICK IMAGE TO OPEN
-    ========================== */
-
+  // Click to open image
   images.forEach((img, index) => {
     img.addEventListener("click", () => {
       openImage(index);
     });
   });
 
-  /* ==========================
-       BUTTON EVENTS
-    ========================== */
-
+  // Button events
   nextBtn.addEventListener("click", nextImage);
 
   prevBtn.addEventListener("click", previousImage);
 
   closeBtn.addEventListener("click", closeLightbox);
 
-  /* ==========================
-       CLICK OUTSIDE TO CLOSE
-    ========================== */
-
+  // Click outside to close
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) {
       closeLightbox();
     }
   });
 
-  /* ==========================
-       KEYBOARD CONTROLS
-    ========================== */
-
+  // Keyboard controls
   document.addEventListener("keydown", (e) => {
     if (lightbox.style.display !== "flex") {
       return;
@@ -139,10 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  /* ==========================
-       MOBILE SWIPE SUPPORT
-    ========================== */
-
+  // Mobile swipe
   let startX = 0;
   let endX = 0;
 

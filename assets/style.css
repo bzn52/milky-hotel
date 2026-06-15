@@ -1,10 +1,4 @@
-/* =========================================
-   HOTEL MILKY - LUXURY MODERN THEME
-   Palette: Charcoal + Burgundy + Warm White + Gold Accent
-========================================= */
-
-/* ================= ROOT ================= */
-
+/* Root */
 :root {
   --primary: #111827;
   --secondary: #1a3c5e;
@@ -20,8 +14,7 @@
   --container: 1200px;
 }
 
-/* ================= RESET ================= */
-
+/* Reset */
 *,
 *::before,
 *::after {
@@ -62,8 +55,7 @@ ul {
   margin: 0 auto;
 }
 
-/* ================= NAVBAR ================= */
-
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -143,8 +135,7 @@ ul {
   z-index: 1100;
 }
 
-/* ================= HERO ================= */
-
+/* Hero */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -211,8 +202,7 @@ ul {
   margin-bottom: 18px;
 }
 
-/* ================= BUTTONS ================= */
-
+/* Buttons */
 .btn-primary {
   display: inline-block;
   background: linear-gradient(135deg, #b91c1c, #7f1d1d);
@@ -256,8 +246,7 @@ ul {
   border-color: white;
 }
 
-/* ================= BOOKING SECTION ================= */
-
+/* Booking section */
 .booking-section {
   background: white;
   padding: 0;
@@ -312,8 +301,7 @@ ul {
   box-shadow: 0 10px 25px rgba(185, 28, 28, 0.35);
 }
 
-/* ================= SECTIONS ================= */
-
+/* Sections */
 section {
   padding: 90px 0;
 }
@@ -341,8 +329,7 @@ section {
   line-height: 1.2;
 }
 
-/* ================= GRID LAYOUTS ================= */
-
+/* Grid */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -357,8 +344,7 @@ section {
   border-radius: var(--radius);
 }
 
-/* ================= ROOM CARDS ================= */
-
+/* Room cards */
 .room-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -426,8 +412,7 @@ section {
   margin-bottom: 16px;
 }
 
-/* ================= AMENITIES ================= */
-
+/* Amenities */
 .amenities-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -469,8 +454,7 @@ section {
   color: var(--muted);
 }
 
-/* ================= CTA ================= */
-
+/* CTA */
 .cta {
   background: var(--primary);
   color: white;
@@ -499,8 +483,7 @@ section {
   margin-top: 10px;
 }
 
-/* ================= TESTIMONIALS ================= */
-
+/* Testimonial */
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -533,8 +516,7 @@ section {
   color: var(--primary);
 }
 
-/* ================= FOOTER ================= */
-
+/* Footer */
 footer {
   background: white;
   padding: 60px 0 30px;
@@ -585,8 +567,7 @@ footer {
   padding-top: 24px;
 }
 
-/* ================= CONTACT PAGE ================= */
-
+/* Contact page */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -601,8 +582,7 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* ================= FORMS ================= */
-
+/* Forms */
 input,
 select,
 textarea {
@@ -683,8 +663,7 @@ textarea:focus {
   box-shadow: 0 10px 25px rgba(185, 28, 28, 0.35);
 }
 
-/* ================= MAP ================= */
-
+/* MAP */
 iframe {
   border: 0 !important;
   border-radius: 16px;
@@ -692,8 +671,7 @@ iframe {
   display: block;
 }
 
-/* ================= TABLE ================= */
-
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -721,8 +699,7 @@ table th:first-child {
   font-weight: 500;
 }
 
-/* ================= GALLERY ================= */
-
+/* Gallery */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -748,8 +725,7 @@ table th:first-child {
   filter: brightness(1.05);
 }
 
-/* ================= LIGHTBOX ================= */
-
+/* Lightbox */
 .lightbox {
   display: none;
   position: fixed;
@@ -821,8 +797,7 @@ table th:first-child {
   right: 20px;
 }
 
-/* ================= BACK TO TOP ================= */
-
+/* Back to top */
 #backToTop {
   display: none;
   position: fixed;
@@ -848,7 +823,7 @@ table th:first-child {
   box-shadow: 0 14px 32px rgba(185, 28, 28, 0.45);
 }
 
-/* ================= SCROLL ANIMATIONS ================= */
+/* Scroll animations */
 
 .fade-up {
   opacity: 0;
@@ -863,8 +838,7 @@ table th:first-child {
   transform: translateY(0);
 }
 
-/* ================= RESPONSIVE ================= */
-
+/* Responsive */
 @media (max-width: 1024px) {
   .hero h1 {
     font-size: 3.2rem;
@@ -1006,8 +980,7 @@ table th:first-child {
   }
 }
 
-/* ================= REDUCED MOTION ================= */
-
+/* Reduced motions */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
