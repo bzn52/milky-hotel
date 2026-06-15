@@ -66,7 +66,7 @@
 
         <h1>Contact Hotel Milky</h1>
 
-        <p>We’re here to help you plan your perfect stay in Kathmandu.</p>
+        <p>We're here to help you plan your perfect stay in Kathmandu.</p>
       </div>
     </section>
 
@@ -85,13 +85,21 @@
             </div>
 
             <form id="contactForm">
-              <input type="text" placeholder="Your Full Name" required />
+              <input
+                type="text"
+                name="full_name"
+                placeholder="Your Full Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <input type="text" name="phone" placeholder="Phone Number" />
 
-              <input type="email" placeholder="Email Address" required />
-
-              <input type="text" placeholder="Phone Number" />
-
-              <select required>
+              <select name="inquiry_type" required>
                 <option value="">Select Inquiry Type</option>
                 <option>Room Booking</option>
                 <option>Airport Pickup</option>
@@ -99,7 +107,7 @@
                 <option>General Inquiry</option>
               </select>
 
-              <textarea placeholder="Your Message" rows="5"></textarea>
+              <textarea name="message" rows="5"></textarea>
 
               <button type="submit">Send Message</button>
             </form>
@@ -115,16 +123,16 @@
             </div>
 
             <div class="testimonial">
-              <h4>📍 Address</h4>
-              <p>Thamel, Kathmandu, Nepal</p>
+              <h4>Address</h4>
+              <p>Swayambhu, Kathmandu, Nepal</p>
 
-              <h4>📞 Phone</h4>
-              <p>+977 9800000000</p>
+              <h4>Phone</h4>
+              <p>+977 9861885157</p>
 
-              <h4>✉ Email</h4>
-              <p>info@hotelmilky.com</p>
+              <h4>Email</h4>
+              <p>meowxzen@gmail.com</p>
 
-              <h4>🕒 Check-in / Check-out</h4>
+              <h4>Check-in / Check-out</h4>
               <p>Check-in: 12:00 PM</p>
               <p>Check-out: 11:00 AM</p>
             </div>
@@ -226,9 +234,9 @@
         <div>
           <h4>Contact</h4>
 
-          <p>Thamel, Kathmandu, Nepal</p>
-          <p>+977 9800000000</p>
-          <p>info@hotelmilky.com</p>
+          <p>Swayambhu, Kathmandu, Nepal</p>
+          <p>+977 9861885157</p>
+          <p>meowxzen@gmail.com</p>
         </div>
 
         <div>
@@ -247,5 +255,26 @@
     </button>
 
     <script src="assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      emailjs.init("8ywpldr2Gho_lWOCv");
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          emailjs
+            .sendForm("service_avk8ook", "template_n0lb8vn", this)
+            .then(() => {
+              alert("Message sent!");
+              this.reset();
+            })
+            .catch((err) => {
+              console.error(err);
+              alert("Failed to send message");
+            });
+        });
+    </script>
   </body>
 </html>

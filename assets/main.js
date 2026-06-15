@@ -86,59 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
     revealObserver.observe(el);
   });
 
-  // counter animations
-  const counters = document.querySelectorAll(".counter");
-
-  const counterObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const counter = entry.target;
-
-          const text = counter.innerText;
-
-          const target = parseFloat(text);
-
-          const hasPlus = text.includes("+");
-
-          const isDecimal = text.includes(".");
-
-          let current = 0;
-
-          const increment = target / 80;
-
-          const updateCounter = () => {
-            if (current < target) {
-              current += increment;
-
-              if (isDecimal) {
-                counter.innerText = current.toFixed(1);
-              } else {
-                counter.innerText = Math.ceil(current);
-              }
-
-              requestAnimationFrame(updateCounter);
-            } else {
-              counter.innerText = target + (hasPlus ? "+" : "");
-            }
-          };
-
-          updateCounter();
-
-          counterObserver.unobserve(counter);
-        }
-      });
-    },
-
-    {
-      threshold: 0.5,
-    },
-  );
-
-  counters.forEach((counter) => {
-    counterObserver.observe(counter);
-  });
-
   // booking form
   const bookingForm = document.querySelector(".booking-form");
 
@@ -146,29 +93,28 @@ document.addEventListener("DOMContentLoaded", () => {
     bookingForm.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      const checkIn = bookingForm.querySelector(
-        "input[type='date']:first-of-type",
-      );
-
+      const checkIn = bookingForm.querySelectorAll("input[type='date']")[0];
       const checkOut = bookingForm.querySelectorAll("input[type='date']")[1];
+      const guests = bookingForm.querySelector("select");
 
       if (!checkIn.value || !checkOut.value) {
         alert("Please select check-in and check-out dates.");
-
         return;
       }
 
       const checkInDate = new Date(checkIn.value);
-
       const checkOutDate = new Date(checkOut.value);
 
       if (checkOutDate <= checkInDate) {
         alert("Check-out date must be after check-in date.");
-
         return;
       }
 
-      alert("Thank you! This is just a demo website.");
+      const message = `Is the room available for ${checkIn.value} to ${checkOut.value} for ${guests.value}?`;
+
+      const whatsappUrl = `https://wa.me/9779861885157?text=${encodeURIComponent(message)}`;
+
+      window.open(whatsappUrl, "_blank");
 
       bookingForm.reset();
     });
