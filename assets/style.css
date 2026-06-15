@@ -469,33 +469,6 @@ section {
   color: var(--muted);
 }
 
-/* ================= STATS ================= */
-
-.stats {
-  background: var(--primary);
-  color: white;
-  text-align: center;
-  padding: 90px 0;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.stats-grid h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--accent);
-}
-
-.stats-grid p {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 6px;
-}
-
 /* ================= CTA ================= */
 
 .cta {
