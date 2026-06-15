@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery | Hotel Milky</title>
+
+    <meta
+      name="description"
+      content="Explore Hotel Milky through our gallery featuring luxury rooms, rooftop views, restaurant experiences, and Himalayan scenery."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo"> Hotel Milky </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section
+      class="hero"
+      style="
+        padding-top: 80px;
+        min-height: 65vh;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+          url(&quot;https://images.unsplash.com/photo-1455587734955-081b22074882?auto=format&fit=crop&w=2000&q=80&quot;);
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="hero-content">
+        <span class="tagline"> EXPLORE HOTEL MILKY </span>
+
+        <h1>Gallery</h1>
+
+        <p>
+          Discover our rooms, amenities, rooftop views, restaurant, and the
+          beauty of Nepal.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY INTRO ================= -->
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span>PHOTO TOUR</span>
+
+          <h2>Experience Hotel Milky</h2>
+        </div>
+
+        <p style="text-align: center; max-width: 800px; margin: auto">
+          Take a visual journey through our hotel. From luxury accommodations
+          and elegant interiors to breathtaking Himalayan scenery, every image
+          captures the essence of Hotel Milky.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY GRID ================= -->
+
+    <section style="padding-top: 20px">
+      <div class="container">
+        <div class="gallery-grid">
+          <img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+            alt="Hotel Exterior"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80"
+            alt="Hotel Lobby"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80"
+            alt="Deluxe Room"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80"
+            alt="Luxury Suite"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+            alt="Bedroom"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80"
+            alt="Interior Design"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=80"
+            alt="Restaurant"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=80"
+            alt="Dining Area"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1200&q=80"
+            alt="Reception"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+            alt="Mountain View"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+            alt="Himalayan Landscape"
+            class="gallery-item"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+            alt="Nepal Nature"
+            class="gallery-item"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div class="lightbox" id="lightbox">
+      <button class="close-lightbox" aria-label="Close">&times;</button>
+
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready To Experience It Yourself?</h2>
+
+        <p>
+          Book your stay today and create unforgettable memories in Kathmandu.
+        </p>
+
+        <a href="contact.html" class="btn-primary"> Book Your Stay </a>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <h3>Hotel Milky</h3>
+
+          <p>Luxury hospitality in the heart of Kathmandu.</p>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+
+          <p>Thamel, Kathmandu, Nepal</p>
+          <p>+977 9800000000</p>
+          <p>info@hotelmilky.com</p>
+        </div>
+
+        <div>
+          <h4>Check-In</h4>
+
+          <p>12:00 PM</p>
+
+          <h4>Check-Out</h4>
+
+          <p>11:00 AM</p>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 Hotel Milky. All Rights Reserved.</div>
+    </footer>
+
+    <button id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/main.js"></script>
+    <script src="assets/gallery.js"></script>
+  </body>
+</html>
