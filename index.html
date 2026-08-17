@@ -3,296 +3,336 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Hotel Milky | Luxury Hotel in Swayambhu Kathmandu</title>
-
-    <meta
-      name="description"
-      content="Experience luxury, comfort, and Himalayan hospitality at Hotel Milky in Swayambhu, Kathmandu. Premium rooms, rooftop views, restaurant, and airport pickup."
-    />
-
-    <meta
-      name="keywords"
-      content="Hotel Kathmandu, Hotel Swayambhu, Nepal Hotel, Luxury Hotel Nepal, Hotel Milky"
-    />
-
+    <title>Milky Hotel — Pokhara, Nepal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="assets/style.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <!-- Navbar -->
-    <header>
-      <nav class="navbar">
-        <a href="index.html" class="logo"> Hotel Milky </a>
+    <nav class="nav">
+      <div class="logo">MILKY <span>Hotel</span></div>
+      <div class="nav-links">
+        <a href="#suites">Suites</a>
+        <a href="#dine">Dining</a>
+        <a href="#wellness">Wellness</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+      <a href="#reserve" class="nav-cta">Reserve</a>
+    </nav>
 
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <div class="menu-btn">
-          <i class="fas fa-bars"></i>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Hero section -->
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <span class="tagline"> ★★★★★ Luxury Hotel in Kathmandu </span>
+      <div class="hero-media">
+        <img
+          src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=2400&q=80"
+          alt="Aerial view of snow-capped Himalayan mountain range at daybreak"
+        />
+      </div>
+      <div class="hero-scrim"></div>
+      <div class="milky-wash"></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">Pokhara, Nepal · 827m elevation</span>
+        <h1 class="display text-96">
+          Where the <em>Himalaya</em><br />meets the Milky Way
+        </h1>
+        <p class="subhead">
+          A twenty-two suite retreat above Phewa Lake, built from stone and
+          cedar, where the Annapurna range fills the window and the night sky
+          does the rest.
+        </p>
+        <div class="hero-actions">
+          <a href="#reserve" class="btn-primary">Reserve your stay →</a>
+          <a href="#suites" class="btn-ghost">View suites</a>
+        </div>
+      </div>
+      <div class="scroll-cue">
+        <span>Scroll</span><span class="line"></span>
+      </div>
+    </section>
 
-          <h1>Your Home in the Heart of Nepal</h1>
+    <!-- INTRO -->
+    <section class="intro reveal">
+      <div class="container">
+        <span class="mono-label">The philosophy</span>
+        <h2
+          class="display text-38"
+          style="max-width: 760px; margin: 0 auto; line-height: 1.15"
+        >
+          We built Milky Hotel on the idea that true luxury in the Himalaya is
+          <em>silence</em>, <em>altitude</em>, and a view that does not need
+          improving.
+        </h2>
+      </div>
+    </section>
 
-          <p>
-            Experience comfort, warmth, and Himalayan hospitality at Hotel
-            Milky. Stay where modern luxury meets authentic Nepali charm.
+    <!-- SUITES -->
+    <section class="suites" id="suites">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono-label">Stay</span>
+          <h2 class="display text-38">Three ways to wake up here</h2>
+          <p class="subhead">
+            Every category faces the range. The difference is how close the
+            water, the wood, and the sky come to your bed.
           </p>
-
-          <div class="hero-buttons">
-            <a href="#booking" class="btn-primary"> Book Your Stay </a>
-
-            <a href="rooms.html" class="btn-secondary"> Explore Rooms </a>
+        </div>
+        <div class="suite-grid reveal">
+          <div class="suite-card suite-1">
+            <div class="suite-price">From $340 / night</div>
+            <h3 class="display">Mountain Suite</h3>
+            <p>
+              Floor-to-ceiling glass framing Machhapuchhre, a wood-fired soaking
+              tub, and a private deck for sunrise coffee at 6,200 feet.
+            </p>
+          </div>
+          <div class="suite-card suite-2">
+            <div class="suite-price">From $410 / night</div>
+            <h3 class="display">Lakeside Villa</h3>
+            <p>
+              A standalone pavilion on stilts over Phewa Lake, with a plunge
+              pool and a boat moored at your own private jetty.
+            </p>
+          </div>
+          <div class="suite-card suite-3">
+            <div class="suite-price">From $265 / night</div>
+            <h3 class="display">Heritage Loft</h3>
+            <p>
+              Hand-carved Newari woodwork, a stone hearth, and skylights
+              positioned for the Milky Way after 10pm in dry season.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Booking section -->
-    <section id="booking" class="booking-section">
+    <!-- PHOTO BAND -->
+    <div class="photo-band reveal">
+      <img
+        src="https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?auto=format&fit=crop&w=2200&q=80"
+        alt="Terraced houses overlooking a Himalayan mountain range"
+      />
       <div class="container">
-        <form class="booking-form">
-          <div class="form-group">
-            <label>Check-In</label>
-            <input type="date" required />
-          </div>
-          <div class="form-group">
-            <label>Check-Out</label>
-            <input type="date" required />
-          </div>
-          <div class="form-group">
-            <label>Guests</label>
-            <select>
-              <option>1 Guest</option>
-              <option>2 Guests</option>
-              <option>3 Guests</option>
-              <option>4 Guests</option>
-              <option>5+ Guests</option>
-            </select>
-          </div>
-          <button type="submit">Check Availability</button>
-        </form>
+        <div class="band-tag">
+          <span class="mono-label">The setting</span>
+          <h2 class="display text-38" style="margin-top: 16px">
+            Built into the hillside, not on top of it
+          </h2>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- About section -->
-    <section class="about-preview">
-      <div class="container grid-2">
-        <div>
+    <!-- DINING -->
+    <section id="dine">
+      <div class="split">
+        <div class="split-media">
           <img
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
-            alt="Hotel Milky"
-            loading="lazy"
+            src="https://images.unsplash.com/photo-1536392706976-e486e2ba97af?auto=format&fit=crop&w=1600&q=80"
+            alt="A candlelit dining table set with ceramic plates"
           />
         </div>
+        <div class="split-text">
+          <span class="mono-label">Dining</span>
+          <h2 class="display text-38">The Kailash Table</h2>
+          <p class="subhead">
+            A nineteen-seat dining room open only for dinner. The menu changes
+            with what came up the mountain that morning — Himalayan trout,
+            foraged nettle, Gundruk fermented greens, and a wine list built
+            around Nepali high-altitude reds.
+          </p>
+          <ul class="amenity-list">
+            <li>Tasting menu, seven courses</li>
+            <li>Private terrace dinners on request</li>
+            <li>Foraging walks with the head chef</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <!-- WELLNESS -->
+    <section id="wellness">
+      <div class="split reverse">
+        <div class="split-media">
+          <img
+            src="https://images.unsplash.com/photo-1636513988093-126e51dee32d?auto=format&fit=crop&w=1600&q=80"
+            alt="A green valley with mountains in the background near Pokhara"
+          />
+        </div>
+        <div class="split-text">
+          <span class="mono-label">Wellness</span>
+          <h2 class="display text-38">A spa built around altitude</h2>
+          <p class="subhead">
+            Himalayan salt therapy, hot-stone massage with river stone from the
+            Seti Gandaki, and a cedar sauna positioned for the same view as the
+            suites. Sunrise yoga on the lawn is included, sunset gongs are
+            optional.
+          </p>
+          <ul class="amenity-list">
+            <li>Five treatment rooms, one open-air</li>
+            <li>Daily sunrise yoga on the great lawn</li>
+            <li>Guided acclimatisation walks for trekkers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAT CARD -->
+    <div class="stat-wrap">
+      <div class="stat-card reveal">
         <div>
-          <span class="section-tag"> ABOUT US </span>
-
-          <h2>Experience Authentic Nepali Hospitality</h2>
-
-          <p>
-            Located in vibrant Swayambhu, Hotel Milky offers guests a perfect
-            blend of modern comfort and Himalayan warmth. Whether you are
-            exploring Kathmandu, trekking through the Himalayas, or traveling
-            for business, we ensure a memorable stay.
+          <p class="quote">
+            "We arrived expecting a hotel with a nice view. We left having
+            watched the Milky Way rise over Annapurna from our bed, no lights
+            for miles."
           </p>
+          <p class="quote-by">— Sample guest review</p>
+        </div>
+        <div class="stat-figures">
+          <div class="stat-figure">
+            <div class="num">22</div>
+            <div class="label">Suites &amp; villas</div>
+          </div>
+          <div class="stat-figure">
+            <div class="num">827m</div>
+            <div class="label">Above Phewa Lake</div>
+          </div>
+          <div class="stat-figure">
+            <div class="num">4.9</div>
+            <div class="label">Average guest rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-          <p>
-            Our dedicated team provides personalized service, comfortable
-            accommodations, delicious cuisine, and breathtaking rooftop mountain
-            views.
+    <!-- DINE / EXPEDITION TILE -->
+    <div class="dine-tile reveal">
+      <div class="dine-inner">
+        <div>
+          <span class="mono-label" style="color: rgba(255, 255, 255, 0.75)"
+            >Beyond the hotel</span
+          >
+          <h2 class="display text-38" style="margin-top: 14px">
+            Trekking &amp; expedition desk
+          </h2>
+          <p class="subhead" style="margin-top: 14px">
+            Private guides for Annapurna Base Camp, Poon Hill, and short
+            acclimatisation loops — arranged the night before, over dinner.
           </p>
-
-          <a href="about.html" class="btn-primary"> Read More </a>
         </div>
+        <a href="#reserve" class="btn-primary">Talk to the desk →</a>
       </div>
-    </section>
+    </div>
 
-    <!-- Rooms section -->
-    <section class="featured-rooms">
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
       <div class="container">
-        <div class="section-title">
-          <span>OUR ROOMS</span>
-
-          <h2>Rooms Built for Rest</h2>
+        <div class="section-head reveal">
+          <span class="mono-label">Gallery</span>
+          <h2 class="display text-38">A few things we look at daily</h2>
         </div>
-
-        <div class="room-grid">
-          <div class="room-card">
+        <div class="gallery-grid reveal">
+          <div class="g-item g-1">
             <img
-              src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
-              alt="Standard Room"
+              src="https://images.unsplash.com/photo-1637846959991-18e54d6e2035?auto=format&fit=crop&w=1200&q=80"
+              alt="Himalayan mountain range covered in snow at sunset"
             />
-
-            <div class="room-content">
-              <h3>Standard Room</h3>
-
-              <p>Comfortable bedding, mountain view, WiFi and hot shower.</p>
-
-              <div class="price">Rs 3500 / night</div>
-
-              <a href="rooms.html"> View Details → </a>
-            </div>
           </div>
-
-          <div class="room-card">
+          <div class="g-item g-2">
             <img
-              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
-              alt="Deluxe Room"
+              src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80"
+              alt="A grey stone temple in Nepal"
             />
-
-            <div class="room-content">
-              <h3>Deluxe Room</h3>
-
-              <p>King bed, city view, mini fridge and Smart TV.</p>
-
-              <div class="price">Rs 5500 / night</div>
-
-              <a href="rooms.html"> View Details → </a>
-            </div>
           </div>
-
-          <div class="room-card">
+          <div class="g-item g-3">
             <img
-              src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=80"
-              alt="Suite"
+              src="https://images.unsplash.com/photo-1621293954908-907159247fc8?auto=format&fit=crop&w=900&q=80"
+              alt="A warm, wood-lined hotel lobby interior"
             />
-
-            <div class="room-content">
-              <h3>Luxury Suite</h3>
-
-              <p>Premium furnishings and panoramic Himalayan views.</p>
-
-              <div class="price">Rs 7500 / night</div>
-
-              <a href="rooms.html"> View Details → </a>
-            </div>
+          </div>
+          <div class="g-item g-4">
+            <img
+              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+              alt="A minimal hotel bedroom with a wooden side table"
+            />
+          </div>
+          <div class="g-item g-5">
+            <img
+              src="https://images.unsplash.com/photo-1608932586266-c627cb9e5e9d?auto=format&fit=crop&w=1200&q=80"
+              alt="Lit candles arranged on a round dinner table"
+            />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Amenities section -->
-    <section class="amenities-preview">
-      <div class="container">
-        <div class="section-title">
-          <span>AMENITIES</span>
-
-          <h2>Everything You Need</h2>
-        </div>
-
-        <div class="amenities-grid">
-          <div>
-            <i class="fas fa-wifi"></i>
-            <h4>Free WiFi</h4>
-          </div>
-
-          <div>
-            <i class="fas fa-utensils"></i>
-            <h4>Restaurant</h4>
-          </div>
-
-          <div>
-            <i class="fas fa-mountain"></i>
-            <h4>Rooftop Views</h4>
-          </div>
-
-          <div>
-            <i class="fas fa-shuttle-van"></i>
-            <h4>Airport Pickup</h4>
-          </div>
-
-          <div>
-            <i class="fas fa-concierge-bell"></i>
-            <h4>24/7 Front Desk</h4>
-          </div>
-
-          <div>
-            <i class="fas fa-broom"></i>
-            <h4>Housekeeping</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-      <div class="container">
-        <h2>Ready for Your Nepal Adventure?</h2>
-
-        <p>
-          Book your stay today and enjoy unforgettable Himalayan hospitality.
+    <!-- RESERVE -->
+    <section class="reserve" id="reserve">
+      <div class="section-head reveal">
+        <span class="mono-label">Reserve</span>
+        <h2 class="display text-80">Tell us your dates</h2>
+        <p class="subhead" style="margin: 16px auto 0">
+          Send an inquiry and our reservations team in Pokhara will reply within
+          a day with availability and a quote.
         </p>
-
-        <a href="contact.html" class="btn-primary"> Reserve Now </a>
       </div>
+      <form
+        class="inquiry reveal"
+        onsubmit="
+          event.preventDefault();
+          this.querySelector('input').placeholder =
+            'Thank you — we\'ll be in touch within a day.';
+          this.reset();
+        "
+      >
+        <input
+          type="text"
+          placeholder="Check-in — check-out, and number of guests"
+          required
+        />
+        <button type="submit" aria-label="Send inquiry">→</button>
+      </form>
+      <p class="reserve-note">Or write directly to hello@example.com</p>
     </section>
 
-    <!-- Footer -->
     <footer>
-      <div class="container footer-grid">
-        <div>
-          <h3>Hotel Milky</h3>
-
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">MILKY <span>Hotel</span></div>
           <p>
-            Your Home in the Heart of Nepal. Luxury stays in Swayambhu,
-            Kathmandu.
+            A twenty-two suite retreat above Phewa Lake, Pokhara, in the
+            foothills of the Annapurna range.
           </p>
         </div>
-
-        <div>
-          <h4>Contact</h4>
-
-          <p>Swayambhu, Kathmandu, Nepal</p>
-          <p>[Hotel Phone]</p>
-          <p>[Hotel email]</p>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#suites">Suites &amp; villas</a>
+          <a href="#dine">The Kailash Table</a>
+          <a href="#wellness">Wellness</a>
+          <a href="#gallery">Gallery</a>
         </div>
-
-        <div>
-          <h4>Check-In</h4>
-
-          <p>12:00 PM</p>
-
-          <h4>Check-Out</h4>
-
-          <p>11:00 AM</p>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <p>123 Example Road</p>
+          <p>Sample District, Nepal</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="tel:+9779800000000">+977 98 0000 0000</a>
         </div>
       </div>
-
-      <div class="copyright">© 2026 Hotel Milky. All Rights Reserved.</div>
+      <div class="footer-bottom">
+        <span>© 2026 Milky Hotel — dummy content</span>
+        <span>All names, prices, and contact details are placeholders</span>
+      </div>
+      <p class="disclaimer">
+        This website is a design demo built for showcase purposes only. Milky
+        Hotel is a fictional property and does not exist in real life.
+      </p>
     </footer>
-
-    <button id="backToTop">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="assets/main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
